@@ -1,0 +1,91 @@
+
+.container {
+    padding-top: 150px;
+    padding-left: 350px;
+    /*width: 1000px;*/
+    /*height: 800px;*/
+    background-color: #000000;
+}
+
+.sun {
+    opacity: 1;
+    stroke: #ffff00;
+    stroke-width: #ffff00;
+    fill: #ffff00;
+}
+
+.planetLines {
+    opacity: 1;
+    stroke: #ffffff;
+    stroke-width: #ffffff;
+    fill: none;
+}
+
+.mercury {
+    stroke: #808080;
+    stroke-width: #808080;
+    fill: #808080;
+    width: 100px;
+    height: 100px;
+    animation: mercury 8s linear infinite;
+}
+
+.venus {
+    stroke-width: #ff1c13;
+    fill: #ff1c13;
+    width: 100px;
+    height: 100px;
+    animation: venus 10s linear infinite;
+}
+
+.earth {
+    stroke-width: #ff1c13;
+    fill: #7bff6d;
+    width: 100px;
+    height: 100px;
+    animation: earth 12s linear infinite;
+}
+
+.mars {
+    stroke-width: #ff1c13;
+    fill: #ffb013;
+    width: 100px;
+    height: 100px;
+    animation: mars 12s linear infinite;
+}
+
+@keyframes mercury {
+    0% {transform:  rotate(0deg)
+                    translateX(-100px)
+                    rotate(0deg);}
+    100% {transform: rotate(360deg)
+                     translateX(-100px)
+                     rotate(-360deg);}
+}
+
+@keyframes venus {
+    0% {transform:  rotate(0deg)
+    translateX(-80px)
+    rotate(0deg);}
+    100% {transform: rotate(360deg)
+    translateX(-80px)
+    rotate(-360deg);}
+}
+
+@keyframes earth {
+    0% {transform:  rotate(0deg)
+    translateX(-60px)
+    rotate(0deg);}
+    100% {transform: rotate(360deg)
+    translateX(-60px)
+    rotate(-360deg);}
+}
+
+@keyframes mars {
+    0% {transform:  rotate(0deg)
+    translateX(-120px)
+    rotate(0deg);}
+    100% {transform: rotate(360deg)
+    translateX(-120px)
+    rotate(-360deg);}
+}
